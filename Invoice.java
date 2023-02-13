@@ -19,10 +19,6 @@ public class Invoice {
         this.partNumber = partNumber;
     }
 
-    public static void main(String[] args) {
-        testInvoice(args); //will run tests
-    }
-
     public String getPartNumber() {
         return partNumber;
     }
@@ -61,6 +57,10 @@ public class Invoice {
         return quantity * pricePerItem;
     }
 
+    public static void main(String[] args) {
+        testInvoice(args); //will run tests
+    }
+    
     public static void testInvoice(String[] args) {
         Invoice invoice = new Invoice("1234", "Screwdriver", 5, 10);
         System.out.println("Part Number: " + invoice.getPartNumber());
