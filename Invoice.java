@@ -56,9 +56,9 @@ public class Invoice {
         // then returns the amount as an int value.
         return quantity * pricePerItem;
     }
-
+    // Write a test program that demonstrates class Invoice’s capabilities.
     public static void main(String[] args) {
-        testInvoice(args); //will run tests
+        testInvoice(args); 
     }
     
     public static void testInvoice(String[] args) {
