@@ -15,21 +15,21 @@ public class Main {
         System.out.println("The country with the largest area is " + countryWithLargestArea.getName());
     }
     // Write and test a method
-    public static Country maximum(Country[] objects) {
-        if (objects.length == 0) {
+    public static Country maximum(Country[] country) {
+        if (country.length == 0) {
             return null;
         }
 
-        Country maxObject = objects[0];
+        Country maxCountry = country[0];
 
         // Use that method to determine the country with the largest area from an array of countries.
-        for (int i = 1; i < objects.length; i++) {
-            Country currentObject = objects[i];
-            if (currentObject.getMeasure() > maxObject.getMeasure()) {
-                maxObject = currentObject;
+        for (int i = 1; i < country.length; i++) {
+            Country currentCountry = country[i];
+            if (currentCountry.getMeasure() > maxCountry.getMeasure()) {
+                maxCountry = currentCountry;
             }
         }
-        // that returns the object with the largest measure. 
-        return maxObject;
+        // that returns the Country with the largest measure. 
+        return maxCountry;
     }
 }
