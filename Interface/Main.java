@@ -1,5 +1,4 @@
 package Interface;
-import Interface.interfaces.Measurable;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,16 +15,16 @@ public class Main {
         System.out.println("The country with the largest area is " + countryWithLargestArea.getName());
     }
     // Write and test a method
-    public static Measurable maximum(Measurable[] objects) {
+    public static Country maximum(Country[] objects) {
         if (objects.length == 0) {
             return null;
         }
 
-        Measurable maxObject = objects[0];
+        Country maxObject = objects[0];
 
         // Use that method to determine the country with the largest area from an array of countries.
         for (int i = 1; i < objects.length; i++) {
-            Measurable currentObject = objects[i];
+            Country currentObject = objects[i];
             if (currentObject.getMeasure() > maxObject.getMeasure()) {
                 maxObject = currentObject;
             }
