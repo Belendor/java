@@ -1,5 +1,5 @@
 package Interface;
-import Interface.Interfaces.Measurable;
+import Interface.interfaces.Measurable;
 
 public class Main {
     public static void main(String[] args) {

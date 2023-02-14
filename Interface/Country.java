@@ -1,6 +1,6 @@
 package Interface;
 
-import Interface.Interfaces.Measurable;
+import Interface.interfaces.Measurable;
 
 public class Country implements Measurable {
 
